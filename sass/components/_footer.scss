@@ -40,11 +40,11 @@
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-address__link:hover,
-.footer-address__link:focus {
-  color: var(--blue-text);
+  &:focus,
+  &:hover {
+    color: var(--blue-text);
+  }
 }
 
 .join {
@@ -88,11 +88,11 @@
   align-items: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.join__social-link-icon:hover,
-.join__social-link-icon:focus {
-  background-color: var(--blue-text);
+  &:hover,
+  &:focus {
+    background-color: var(--blue-text);
+  }
 }
 
 /* footer subscribe */
@@ -113,12 +113,12 @@
   width: 358px;
   outline: none;
   margin-right: 12px;
-}
 
-.subscribe__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe__button {

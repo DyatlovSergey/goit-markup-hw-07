@@ -9,6 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__logo {
@@ -19,14 +23,10 @@
   border-radius: 4px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients__card:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients__logo:hover,
-.clients__logo:focus {
-  fill: var(--blue-text);
-  border: 1px solid var(--blue-text);
+  &:hover,
+  &:focus {
+    fill: var(--blue-text);
+    border: 1px solid var(--blue-text);
+  }
 }
